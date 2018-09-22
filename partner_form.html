@@ -7,8 +7,8 @@
 
 <body>
 <?php
-/Require DB details
-equire_once('db_login.php');
+//Require DB details
+require_once('db_login.php');
 
 //Connect database
 $conn = new mysqli($dbServer, $dbUsername, $dbPassword, $dbName);
@@ -24,7 +24,7 @@ if(mysqli_connect_error()) {
   $query->close();
   $conn->close();
 }
-
+?>
 
 
   <form action="partner_insert.php" method="post">

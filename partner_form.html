@@ -21,8 +21,7 @@ if(mysqli_connect_error()) {
   while ($results[] = mysql_fetch_object($query));
   array_pop ($results);
   print_r_html($results);
-  $query->close();
-  $conn->close();
+
 }
 ?>
 

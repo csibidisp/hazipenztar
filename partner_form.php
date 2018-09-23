@@ -24,11 +24,17 @@ $conn = new mysqli($dbServer, $dbUsername, $dbPassword, $dbName);
 if(mysqli_connect_error()) {
   die('connect_error(' . mysqli_connect_errno().')'. mysqli_connect_error());
 } else {
-  $sql = "SELECT * from partner_tipusa";
-  $query = mysql_query($sql);
-  while ($results[] = mysql_fetch_object($query));
-  array_pop ($results);
-  print_r_html($results);
+  $SELECT = "SELECT partner_tipusa FROM partner_tipusa";
+
+  $stmt = $conn->prepare($SELECT);
+  $stmt->execute();
+  $stmt->store_result();
+  $rnum = $stmt->num_rows;
+
+  echo 'Num rows: ' . $stmt->num_rows . "<BR />\n";
+
+  $stmt->close();
+  $conn->close();
 
 }
 ?>

@@ -45,11 +45,10 @@ if(mysqli_connect_error()) {
         <td>Partner típusa :</td>
         <td>
           <select name="partner_tipusa" required/>
-            <option value="" selected>Válasszon típust</option>
+<!--            <option value="" selected>Válasszon típust</option>-->
           <?php foreach($array as $option) :  ?>
             <option value="<?php echo $option->PARTNER_TIPUSA_ID; ?>"><?php echo $option->PARTNER_TIPUSA; ?></option>
-
-
+          <?php endforeach; ?>
           </select>
         </td>
 

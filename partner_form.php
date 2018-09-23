@@ -7,9 +7,9 @@
 
 <body>
 
-<!--
-<php
 
+<?php
+error_reporting(-1);
 //Require DB details
 include 'db_login.php';
 
@@ -27,7 +27,7 @@ if(mysqli_connect_error()) {
 
 }
 ?>
--->
+
 
   <form action="partner_insert.php" method="post">
     <table>

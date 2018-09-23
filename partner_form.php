@@ -11,7 +11,7 @@
 <?php
 error_reporting(-1);
 //Require DB details
-include 'db_login.php';
+require 'db_login.php';
 
 //Connect database
 $conn = new mysqli($dbServer, $dbUsername, $dbPassword, $dbName);

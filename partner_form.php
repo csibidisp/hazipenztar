@@ -48,7 +48,10 @@ if(mysqli_connect_error()) {
 <!--            <option value="" selected>Válasszon típust</option>-->
           <?php foreach($array as $option) :  ?>
             <option value="<?php echo $option->PARTNER_TIPUSA_ID; ?>"><?php echo $option->PARTNER_TIPUSA; ?></option>
-          <?php endforeach; ?>
+          <?php endforeach;
+          $query->close();
+          $conn->close(); 
+          ?>
           </select>
         </td>
 

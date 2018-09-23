@@ -11,13 +11,14 @@
 <?php
 error_reporting(-1);
 //Require DB details
-//require 'db_login.php';
+require 'db_login.php';
 
+/*
 $dbServer = 'localhost';
 $dbUsername = 'root';
 $dbPassword = 'e1M9M7ya6';
 $dbName = 'hazipenztar';
-
+*/
 //Connect database
 $conn = new mysqli($dbServer, $dbUsername, $dbPassword, $dbName);
 
@@ -50,7 +51,7 @@ if(mysqli_connect_error()) {
             <option value="<?php echo $option->PARTNER_TIPUSA_ID; ?>"><?php echo $option->PARTNER_TIPUSA; ?></option>
           <?php endforeach;
           $query->close();
-          $conn->close(); 
+          $conn->close();
           ?>
           </select>
         </td>

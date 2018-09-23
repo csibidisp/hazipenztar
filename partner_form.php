@@ -8,7 +8,7 @@
 <body>
 <?php
 //Require DB details
-require_once('db_login.php');
+include 'db_login.php';
 
 //Connect database
 $conn = new mysqli($dbServer, $dbUsername, $dbPassword, $dbName);

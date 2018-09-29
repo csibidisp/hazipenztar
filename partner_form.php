@@ -38,7 +38,7 @@ if(mysqli_connect_error()) {
             <option value="<?php echo $option->PARTNER_TIPUSA_ID; ?>"><?php echo $option->PARTNER_TIPUSA; ?></option>
           <?php endforeach;
           $query->close();
-          $conn->close();
+          //$conn->close();
           mysql_connect("localhost", "user", "pass")
 		        or die("Failed to connect: ".mysql_error());
 	           echo mysql_stat();

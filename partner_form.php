@@ -45,6 +45,5 @@ if(mysqli_connect_error()) {
       </tr>
     </table>
   </form>
-  echo connection_status()
 </body>
 </html>

@@ -38,7 +38,11 @@ if(mysqli_connect_error()) {
             <option value="<?php echo $option->PARTNER_TIPUSA_ID; ?>"><?php echo $option->PARTNER_TIPUSA; ?></option>
           <?php endforeach;
           $query->close();
-          //$conn->close();
+          if ($conn->ping()) {
+            printf ("Our connection is ok!\n");
+            } else {
+              printf ("Error: %s\n", $conn->error);
+            }
           ?>
           </select>
         </td>

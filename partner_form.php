@@ -39,8 +39,6 @@ if(mysqli_connect_error()) {
           <?php endforeach;
           $query->close();
           //$conn->close();
-          mysql_connect("localhost", "user", "pass")
-		        or die("Failed to connect: ".mysql_error());
 	           echo mysql_stat();
           ?>
           </select>

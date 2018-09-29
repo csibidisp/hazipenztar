@@ -39,12 +39,12 @@ if(mysqli_connect_error()) {
           <?php endforeach;
           $query->close();
           //$conn->close();
-	           echo connection_status();
           ?>
           </select>
         </td>
       </tr>
     </table>
   </form>
+  echo connection_status()
 </body>
 </html>

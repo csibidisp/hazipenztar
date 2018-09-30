@@ -54,6 +54,9 @@ if($conn->connect_error) {
           </select>
         </td>
       </tr>
+      <tr>
+        <td><input type="submit" value="Submit"></td>
+      </tr>
     </table>
   </form>
   <?php

@@ -13,8 +13,8 @@ require 'db_login.php';
 //Connect database
 $conn = new mysqli($dbServer, $dbUsername, $dbPassword, $dbName);
 
-if(mysqli_connect_error()) {
-  die('connect_error(' . mysqli_connect_errno().')'. mysqli_connect_error());
+if($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 } else {
   $query = $conn->query("SELECT * FROM partner_tipusa");
 
@@ -39,9 +39,9 @@ if(mysqli_connect_error()) {
           <?php endforeach;
           $query->close();
           if ($conn->ping()) {
-            printf ("Our connection is ok!\n");
+            die ("Our connection is ok!\n");
             } else {
-              printf ("Error: %s\n", $conn->error);
+              echo "Error: %s\n", $conn->error;
             }
           ?>
           </select>

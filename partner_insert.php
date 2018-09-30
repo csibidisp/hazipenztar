@@ -4,7 +4,7 @@ $partner_nev = $_POST['partner_nev'];
 $partner_tipusa = $_POST['partner_tipusa'];
 $partner_allapota = $_POST['partner_allapota'];
 
-echo "$partner_nev, $partner_tipusa, $partner_allapota";
+//echo "$partner_nev, $partner_tipusa, $partner_allapota";
 
 if(!empty($partner_nev) || !empty($partner_tipusa) || !empty($partner_allapota)) {
 
@@ -17,7 +17,7 @@ if(!empty($partner_nev) || !empty($partner_tipusa) || !empty($partner_allapota))
     die("Coennection failed: " . $conn->connect_error);
   } else {
 
-    $query = "SELECT partner_nev FROM hazipenztar WHERE partner_nev = ?";
+    $query = "SELECT partner_nev FROM partnerek WHERE partner_nev = ?";
 
     $insert = "INSERT INTO partnerek (partner_nev, partner_tipusa, partner_allapota) VALUES (?,?,?)";
 

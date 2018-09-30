@@ -17,10 +17,13 @@ if($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 } else {
   $query1 = $conn->query("SELECT * FROM partner_tipusa");
+  $query2 = $conn->query("SELECT * FROM megjelenes");
 
   while ($array1[] = $query1->fetch_object());
+  while ($array2[] = $query2->fetch_object());
 
   array_pop($array1);
+  array_pop($array2);
 }
 ?>
   <form action="partner_insert.php" method="post">
@@ -37,6 +40,16 @@ if($conn->connect_error) {
           <?php foreach($array1 as $option1) :  ?>
             <option value="<?php echo $option1->PARTNER_TIPUSA_ID; ?>"><?php echo $option1->PARTNER_TIPUSA; ?></option>
           <?php endforeach;?>
+        <tr>
+          <td>Partner állapota :</td>
+          <td>
+            <select name="partner_allapota" required/>
+            <?php foreach ($array2 as $option2) : ?>
+              <option value="<?php echo $option2->MEGJELENES_ID; ?>"><?php echo $option2->MEGJELENES; ?></option>
+            <?php endforeach;?>
+            </select>
+          </td>
+        </tr>
           </select>
         </td>
       </tr>

@@ -36,15 +36,15 @@ if($conn->connect_error) {
 <!--            <option value="" selected>Válasszon típust</option>-->
           <?php foreach($array as $option) :  ?>
             <option value="<?php echo $option->PARTNER_TIPUSA_ID; ?>"><?php echo $option->PARTNER_TIPUSA; ?></option>
-          <?php endforeach;
-          $query->close();
-          ?>
+          <?php endforeach;?>
           </select>
         </td>
       </tr>
     </table>
   </form>
   <?php
+  $query->close();
+  $conn->close();
   if ($conn->ping()) {
     die ("Our connection is ok!\n");
     } else {

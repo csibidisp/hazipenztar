@@ -49,7 +49,7 @@ if($conn->connect_error) {
         <td>
           <select name="partner_allapota" required>
             <?php foreach ($array2 as $option2) : ?>
-              <option value="<?php echo $option2->MEGJELENES_ID; ?>" selected=3><?php echo $option2->MEGJELENES; ?></option>
+              <option value="<?php echo $option2->MEGJELENES_ID; ?>" selected=2><?php echo $option2->MEGJELENES; ?></option>
             <?php endforeach;?>
           </select>
         </td>

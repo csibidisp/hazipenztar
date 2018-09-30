@@ -45,11 +45,6 @@ if($conn->connect_error) {
   <?php
   $query->close();
   $conn->close();
-  if ($conn->ping()) {
-    die ("Our connection is ok!\n");
-    } else {
-      echo "Error: %s\n", $conn->error;
-    }
   ?>
 </body>
 </html>

@@ -38,16 +38,18 @@ if($conn->connect_error) {
             <option value="<?php echo $option->PARTNER_TIPUSA_ID; ?>"><?php echo $option->PARTNER_TIPUSA; ?></option>
           <?php endforeach;
           $query->close();
-          if ($conn->ping()) {
-            die ("Our connection is ok!\n");
-            } else {
-              echo "Error: %s\n", $conn->error;
-            }
           ?>
           </select>
         </td>
       </tr>
     </table>
   </form>
+  <?php
+  if ($conn->ping()) {
+    die ("Our connection is ok!\n");
+    } else {
+      echo "Error: %s\n", $conn->error;
+    }
+  ?>
 </body>
 </html>

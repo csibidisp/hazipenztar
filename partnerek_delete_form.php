@@ -114,7 +114,7 @@
 					<td>'.$option->PARTNER_NEV.'</td>
 					<td>'.$option->PARTNER_TIPUSA.'</td>
 					<td>'.$option->PARTNER_ALLAPOTA.'</td>
-					<td></td>
+					<td><a href=\"partnerek_delete.php?id=".$option->PARTNER_ID."\">Delete</a></td>
 
 				</tr>';
 

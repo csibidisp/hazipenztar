@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>Displaying MySQL Data in HTML Table</title>
-	<style type="text/css">
+<!--	<style type="text/css">
 		body {
 			font-size: 15px;
 			color: #343d44;
@@ -81,6 +81,7 @@
 			background-color: #ffcccc;
 		}
 	</style>
+-->
 </head>
 <body>
 	<h1>Table 1</h1>

@@ -106,10 +106,10 @@
 
 			echo '<tr>
 
-					<td>'.$row['partner_id'].'</td>
-					<td>'.$row['partner_nev'].'</td>
-					<td>'.$row['partner_tipusa'].'</td>
-					<td>'.$row['partner_allapota'].'</td>
+					<td>'.$array['partner_id'].'</td>
+					<td>'.$array['partner_nev'].'</td>
+					<td>'.$array['partner_tipusa'].'</td>
+					<td>'.$array['partner_allapota'].'</td>
 
 				</tr>';
 

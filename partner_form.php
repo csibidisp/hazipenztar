@@ -20,12 +20,12 @@ if($conn->connect_error) {
   //partner_tipusa select data
   $query1 = $conn->query("SELECT * FROM partner_tipusa");
   while ($array1[] = $query1->fetch_object());
-  array_pop($array2);
+  array_pop($array1);
 
   //partner_allapota select data
   $query2 = $conn->query("SELECT * FROM megjelenes");
   while ($array2[] = $query2->fetch_object());
-  array_pop($array1);
+  array_pop($array2);
 }
 ?>
   <form action="partner_insert.php" method="post">

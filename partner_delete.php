@@ -97,6 +97,8 @@
 		<tbody>
 		<?php
 
+		require 'partnerek_select.php';
+
 		while ($row = mysqli_fetch_array($query))
 		{
 

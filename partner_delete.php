@@ -100,7 +100,8 @@
 
 		require 'partnerek_select.php';
 
-		while ($row = fetch_array($query))
+		while ($array[] = $query->fetch_object());
+		array_pop($array);
 		{
 
 			echo '<tr>

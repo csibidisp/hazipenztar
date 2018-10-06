@@ -93,6 +93,7 @@
 				<th>NEV</th>
 				<th>TIPUS</th>
 				<th>ALLAPOT</th>
+				<th>TÖRLÉS</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -113,6 +114,7 @@
 					<td>'.$option->PARTNER_NEV.'</td>
 					<td>'.$option->PARTNER_TIPUSA.'</td>
 					<td>'.$option->PARTNER_ALLAPOTA.'</td>
+					<td></td>
 
 				</tr>';
 

@@ -81,12 +81,12 @@
 			background-color: #ffcccc;
 		}
 	</style>
--->
+
 </head>
 <body>
 	<h1>Table 1</h1>
-	<table>
-		<caption>Sales Data of Electronic Division</caption>
+	<table class="data-table">
+		<caption class="title">Sales Data of Electronic Division</caption>
 		<thead>
 			<tr>
 				<th>ID</th>

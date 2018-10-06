@@ -88,11 +88,10 @@
 		<caption class="title">Sales Data of Electronic Division</caption>
 		<thead>
 			<tr>
-				<th>NO</th>
-				<th>CUSTOMER</th>
-				<th>ITEM</th>
-				<th>DATE</th>
-				<th>AMOUNT</th>
+				<th>ID</th>
+				<th>NEV</th>
+				<th>TIPUS</th>
+				<th>ALLAPOT</th>
 			</tr>
 		</thead>
 		<tbody>

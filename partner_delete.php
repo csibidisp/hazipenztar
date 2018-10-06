@@ -102,14 +102,17 @@
 
 		while ($array[] = $query->fetch_object());
 		array_pop($array);
+
+		foreach($array as $option)
+
 		{
 
 			echo '<tr>
 
-					<td>'.$array['partner_id'].'</td>
-					<td>'.$array['partner_nev'].'</td>
-					<td>'.$array['partner_tipusa'].'</td>
-					<td>'.$array['partner_allapota'].'</td>
+					<td>'.$option1->PARTNER_ID.'</td>
+					<td>'.$option1->PARTNER_NEV.'</td>
+					<td>'.$option1->PARTNER_TIPUSA.'</td>
+					<td>'.$option1->PARTNER_ALLAPOTA.'</td>
 
 				</tr>';
 

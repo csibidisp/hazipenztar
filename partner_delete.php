@@ -109,10 +109,10 @@
 
 			echo '<tr>
 
-					<td>'.$option1->PARTNER_ID.'</td>
-					<td>'.$option1->PARTNER_NEV.'</td>
-					<td>'.$option1->PARTNER_TIPUSA.'</td>
-					<td>'.$option1->PARTNER_ALLAPOTA.'</td>
+					<td>'.$option->PARTNER_ID.'</td>
+					<td>'.$option->PARTNER_NEV.'</td>
+					<td>'.$option->PARTNER_TIPUSA.'</td>
+					<td>'.$option->PARTNER_ALLAPOTA.'</td>
 
 				</tr>';
 

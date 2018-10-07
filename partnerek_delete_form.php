@@ -140,7 +140,8 @@ if(isset($_POST['name']))
 					<td>'.$option->PARTNER_NEV.'</td>
 					<td>'.$option->PARTNER_TIPUSA.'</td>
 					<td>'.$option->PARTNER_ALLAPOTA.'</td>
-					<td><input type="hidden" name="id" value="' . $id . '"/><input type="submit" value="Delete" ></td>
+					<td><input type="submit" value="Edit" ></td>
+					<td><input type="submit" value="Delete" ></td>
 
 				</tr>';
 

@@ -119,6 +119,7 @@ if(isset($_POST['name']))
 				<th>NEV</th>
 				<th>TIPUS</th>
 				<th>ALLAPOT</th>
+				<th>MÓDOSÍTÁS</th>
 				<th>TÖRLÉS</th>
 			</tr>
 		</thead>

@@ -1,3 +1,23 @@
+<?php
+
+include_once('db_login.php');
+
+if(isset($_POST['name']))
+{
+	$name = $_POST['name'];
+
+	$conn = new mysqli($dbServer, $dbUsername, $dbPassword, $dbName);
+
+	if(mysql_query("INSERT INTO partnerek VALUES('','$name')"))
+		echo "Successful Insertion!";
+	  else
+		echo "Please try again";
+	}
+
+	//$res = mysql_query("SELECT * FROM partnerek");
+
+?>
+
 <html>
 <head>
 	<title>Displaying MySQL Data in HTML Table</title>
@@ -84,6 +104,12 @@
 
 </head>
 <body>
+
+	<form action="." method="POST">
+	Name: <input type="text" name="name"/><br />
+	<input type="submit" value=" Enter "/>
+	</form>
+
 	<h1>Table 1</h1>
 	<table class="data-table">
 		<caption class="title">Sales Data of Electronic Division</caption>

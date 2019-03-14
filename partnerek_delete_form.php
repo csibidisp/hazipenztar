@@ -111,6 +111,7 @@ if(isset($_POST['name']))
 	</form>
 
 	<h1>Table 1</h1>
+	<form action="." method="post">
 	<table class="data-table">
 		<caption class="title">Sales Data of Electronic Division</caption>
 		<thead>
@@ -156,5 +157,6 @@ if(isset($_POST['name']))
 
 		</tfoot>
 	</table>
+</form>
 </body>
 </html>
